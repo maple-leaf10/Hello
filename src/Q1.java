@@ -175,7 +175,7 @@ class West2FriedChickenRestauran implements FriedChickenRestaurant{
     private double balance;//余额
     private final List<Beer> BList = new ArrayList<>();//啤酒列表，不进行固定位置插入，用数组实现更方便
     private final List<Juice> JList = new ArrayList<>();//果汁列表
-    private static final List<SetMeal> MList = new ArrayList<>();//套餐列表
+    private static final List<SetMeal> MList = new ArrayList<>();//套餐列表，这三个列表暂不涉及修改等，先定义为final，后续视情况修改
     West2FriedChickenRestauran(double balance, Beer[] b, Juice[] j) {
         this.balance = balance;
         BList.addAll(Arrays.asList(b));
